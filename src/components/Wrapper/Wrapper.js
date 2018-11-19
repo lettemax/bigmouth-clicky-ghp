@@ -45,7 +45,7 @@ class Wrapper extends Component {
             newScore+=1;
 
             // Set state
-            this.setState({status: "Correct guess"})
+            this.setState({status: "Nice click"})
             this.setState({clicked: arr})
             this.setState({score: newScore})
 
@@ -67,7 +67,7 @@ class Wrapper extends Component {
            //
            this.setState({clicked: []})
 
-           this.setState({status: "You already guessed " + name + ". New game started"})
+           this.setState({status: "You already clicked " + name + ". New game started"})
 
            this.setState({score: 0})
         }
