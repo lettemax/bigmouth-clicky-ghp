@@ -71,22 +71,19 @@ class Wrapper extends Component {
 
            this.setState({score: 0})
         }
-        // setTimeout(()=> {
-            /**
-             * Shuffles array in place. ES6 version
-             * param {Array} a items An array containing the items.
-             */
-            let a = this.state.characters;
+        /**
+         * Shuffles array in place. ES6 version
+         * param {Array} a items An array containing the items.
+         */
+        let a = this.state.characters;
 
-            for (let i = a.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                    [a[i], a[j]] = [a[j], a[i]];
-            }
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+        }
 
-            // Assign our new random characters array to the state characters array
-            this.setState({characters: a});
-        
-        // }, 100);
+        // Assign our new random characters array to the state characters array
+        this.setState({characters: a});
 
     }
   
