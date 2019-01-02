@@ -50,6 +50,7 @@ class Wrapper extends Component {
             this.setState({score: newScore})
 
             if (newScore == 12) {
+                
                 this.setState({status: "You won!!! New game started"})
                 this.setState({score: 0})
                 this.setState({clicked: []})
